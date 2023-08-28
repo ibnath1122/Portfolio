@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar Start */
+#navbar {
+    background: #000000;
+}
+
+#logo {
+    font-size: 36px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: #00bbff;
+}
+
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #00bbff;
+    color: rgb(0, 0, 0);
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+    width: 100%;
+    height: 90vh;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5 {
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: #00bbff;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Graphic Design";
+    }
+
+    10% {
+        content: "Web Development";
+    }
+
+    20% {
+        content: "Video Editor";
+    }
+
+    30% {
+        content: "Public Speaking";
+    }
+
+    40% {
+        content: "Leadership";
+    }
+
+    50% {
+        content: "Project Management";
+    }
+
+    60% {
+        content: "Event Management";
+    }
+
+    70% {
+        content: "Computer Programming";
+    }
+
+    80% {
+        content: "Microsoft Office Suite";
+    }
+
+    90% {
+        content: "Codespaces";
+    }
+
+    100% {
+        content: "Data Management System";
+    }
+}
+
+.home .content p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover {
+    background: #00bbff;
+    color: white;
+}
+
+@media (max-width:850px) {
+    .home {
+        background-position: 50%;
+    }
+}
+
+@media (max-width:450px) {
+    .home .content h5 {
+        font-size: 25px;
+    }
+
+    .home .content h1 {
+        font-size: 38px;
+    }
+
+    .home .content p {
+        font-size: 13px;
+    }
+}
+
+/* Home Section End */
+
+/* Section contact Start */
+.contact {
+    background: #000000;
+    padding: 50px;
+}
+
+.main-text h1 {
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+.main-text h1 span {
+    color: #00bbff;
+}
+
+.contact .card {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px rgb(255, 255, 255);
+}
+
+.contact .row {
+    margin-top: 30px;
+}
+
+.contact form button {
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+.contact form textarea {
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 120px;
+}
+
+.contact .submit {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #00bbff;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.contact .submit:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .contact {
+        padding: 0;
+    }
+
+    .main-text h1 {
+        padding: 20px;
+    }
+}
+
+/* Section contact End */
+
+/* About Start */
+.about {
+    padding: 50px;
+    margin-top: 0px;
+    background: #000000;
+}
+
+.about .card {
+    border-radius: 10px;
+}
+
+.about .card img {
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-weight: 500;
+}
+
+#about-btn {
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #00bbff;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    width: 170px;
+}
+
+@media (max-width:765px) {
+    .about {
+        padding: 0;
+    }
+}
+
+#about span {
+    color: #00bbff;
+}
+
+/* About End */
+
+
+/* Section Services Start */
+.services {
+    background: #000000;
+    margin-top: 0px;
+}
+
+#services span {
+    color: #00bbff;
+}
+
+.services .card {
+    box-shadow: rgba(101, 213, 248, 0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card i {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3 {
+    font-weight: 600;
+}
+
+.services .card .card-body {
+    text-align: center;
+}
+
+/* Section Services End */
+
+/* eduacation */
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: #00bbff;
+}
+
+#eduacation {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+}
+
+#eduacation h1 {
+    color: white;
+    padding-top: 50px;
+}
+
+#eduacation h3 i {
+    color: #00bbff;
+}
+
+#eduacation h3 {
+    color: white;
+    border-bottom: 2px solid #00bbff;
+    width: 170px;
+    margin-top: 30px;
+}
+
+#eduacation h2 {
+    color: white;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+#eduacation p {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#eduacation i {
+    color: #00bbff;
+}
+
+/* eduacation */
+
+.experiences {
+    padding: 50px;
+    background: #000000;
+
+}
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    background-color: #000000;
+}
+
+.main-txt h1 span {
+    color: #00bbff;
+}
+
+.experiences .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.experiences .card img {
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.experiences .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.experiences .card .card-body p {
+    font-size: 15px;
+}
+
+.experiences .card img:hover {
+    transform: scale(1.1);
+
+}
+
+.experiences .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: #00bbff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section experiences End */
+.projects {
+    padding: 30px;
+    background: #000000;
+    align-items: center;
+}
+
+.projects .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projects .card {
+    width: 400px;
+    height: 280px;
+    padding: 1rem 1rem;
+    align-self: start;
+    display: flex;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    margin-bottom: 30px;
+}
+
+
+#projects .card:hover {
+    transform: translateY(10px);
+}
+
+#projects .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(55, 192, 247, 0.5), rgb(54, 216, 249));
+    z-index: 1;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+#projects .card:hover:before {
+    opacity: 1;
+}
+
+#projects .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projects .card .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.5s all;
+}
+
+.projects .card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.projects .card .info h1 {
+    margin-left: 0;
+}
+
+.projects .card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.projects .card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .projects .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .projects .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .projects .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects .card .info {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .projects .card {
+        width: 50%;
+    }
+}
+
+/* work */
+#work {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    padding: 30px;
+}
+
+#work span {
+    color: #00bbff;
+}
+
+#work h1 {
+    color: white;
+    padding-top: 15px;
+}
+
+#work .card {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#work .card:hover {
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width:500px) {
+    #work {
+        height: 150vh;
+    }
+}
+
+/* work */
+
+/* Section events Start */
+.events {
+    padding: 50px;
+    margin-top: 0px;
+    background: #000000;
+
+}
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.main-txt h1 span {
+    color: #00bbff;
+}
+
+.events .card {
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.events .card img {
+    border-radius: 5px;
+}
+
+.events .card .card-body {
+    background: transparent;
+}
+
+.events .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.events .card .card-body p {
+    font-size: 15px;
+}
+
+.events .card .card-body a {
+    padding: 10px;
+    text-decoration: none;
+    background: #00bbff;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width:765px) {
+    .events {
+        padding: 0;
+    }
+}
+
+/* Section events End */
+
+
+
+/* footer */
+#footer {
+    width: 100%;
+    margin-top: 0px;
+    height: 35%;
+    text-align: center;
+    background: #0490c7;
+}
+
+#footer h1 {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 30px;
+}
+
+#footer p {
+    color: white;
+    text-shadow: 0px 0px 1px;
+}
+
+.social-links i {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    background: #00bbff;
+}
+
+/* footer */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    position: fixed;
+    border-radius: 50px;
+    color: white;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 50px;
+}
+
+.arrow:hover {
+    color: white;
+}
